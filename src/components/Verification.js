@@ -25,7 +25,7 @@ function Verification() {
     if (code.join("") === "1234") { // Replace "1234" with the actual verification logic
       alert("Verification successful!");
       // Navigate to the next page or perform further actions
-      navigate("/nextpage");
+      navigate("/dashboard");
     } else {
       alert("Invalid verification code. Please try again.");
     }
