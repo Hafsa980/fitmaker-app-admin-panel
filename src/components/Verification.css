@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .verification-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #101828;
+  }
+  
+  .verification-box {
+    flex: 1;
+    max-width: 430px;
+    background-color: #1f2937;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+  
+  .verification-box h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .verification-box p {
+    text-align: center;
+    color: #5c5c5e;
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  
+  .code-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .code-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e3a4b;
+    color: white;
+  }
+  
+  .confirm-button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #5bbd69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .change-contact, .verification-box a {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 40px;
+    background-image: url('../images/image2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .verification-container {
+      flex-direction: column;
+    }
+  
+    .image-section {
+      display: none;
+    }
+  
+    .verification-box {
+      max-width: 100%;
+    }
+  }
+  

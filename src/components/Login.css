@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #101828;
+  }
+  
+  .login-box {
+    flex: 1;
+    max-width: 430px;
+    background-color: #1f2937;
+    padding: 40px;
+    color: white;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+  
+  .login-box h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .login-box p {
+    text-align: center;
+    color: #656668;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5bbd69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  
+  .register {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .social-login button {
+    flex: 1;
+    margin: 5px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 40px;
+    background-image: url('../images/image1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .image-section {
+      display: none;
+    }
+  
+    .login-box {
+      max-width: 100%;
+    }
+  }
+  
