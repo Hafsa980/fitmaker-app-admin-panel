@@ -1,47 +1,24 @@
-import React, { useState } from "react";
-import { FaBars, FaHome, FaUsers, FaVideo, FaChartBar } from "react-icons/fa";
+import React from "react";
 import "./Dashboard.css";
+import Sidebar from "./Sidebar";
 import profile from '../images/image4.jpg'
 import graph1 from '../images/graph1.png'
 import graph2 from '../images/graph2.png'
-import user from '../images/image4.jpg'
+import user from '../images/image3.jpg'
 
 function Dashboard() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
-  };
 
   return (
     <div className="dashboard-container">
       {/* Sidebar */}
-      <nav className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <div className="sidebar-header">
-          <h1>ANDREW'S</h1>
-          <button className="sidebar-toggle" onClick={toggleSidebar}>
-            <FaBars />
-          </button>
-        </div>
-        <ul>
-          <li><FaHome /> Dashboard</li>
-          <li><FaUsers /> Users</li>
-          <li><FaChartBar /> Subscriptions</li>
-          <li><FaVideo /> Videos</li>
-        </ul>
-        <button className="go-live">Go Live</button>
-      </nav>
+      <Sidebar />
 
       {/* Main Content */}
       <div className="main-content">
         <header>
-          <button className="mobile-toggle" onClick={toggleSidebar}>
-            <FaBars />
-          </button>
           <div className="profile-section">
             <img src={profile} alt="Profile" className="profile-pic" />
             <p>John Doe</p>
-            {/* <span>admin@example.com</span> */}
           </div>
         </header>
 
